@@ -65,7 +65,14 @@ body {
 #showcase_container {
     width: 100%;
     min-height: 750px;
-    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 70px;
+}
+
+#showcase_container_ {
+    width: 100%;
+    min-height: 750px;
+    background-color: rgba(0, 0, 0, 0.2);
     margin-top: 70px;
 }
 
