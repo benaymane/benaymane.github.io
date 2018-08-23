@@ -2,10 +2,7 @@ body {
     margin: 0;
     padding: 0px;
     height: 100vh;
-    width: 100vw;    
-    animation-name: img-ani;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in;
+    width: 100vw;
     
 }
 
@@ -23,8 +20,12 @@ body {
     background-image: url("code_dark.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:cover;
-    opacity: 0.9;    
+    background-size:cover; 
+
+    
+    animation-name: img-ani;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
 }
 
 /*
@@ -39,6 +40,10 @@ absolute top 0 etc with inline block display with width and height
     margin: auto;
     width: 80%;
     height: 500px;
+
+    animation-name: img-ani;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
 }
 
 #intro p {

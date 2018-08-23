@@ -3,16 +3,38 @@
     <head>
         <title>Ben Chafik</title>
         <link rel="stylesheet" type="text/css" href="style/showcase_style.css" />
+        <link rel="stylesheet" type="text/css" href="style/viewer.css" />
         <link href="https://fonts.googleapis.com/css?family=Abel|Lobster|Quicksand" rel="stylesheet">  
     </head>
     <body>
+        <script>
+            function showImage(name) {
+                document.getElementById("picture_viewer").style.display = "block";
+                document.getElementById("picture_holder").src = "style/"+name;
+            }
+
+            function closeViewer() {
+                document.getElementById("picture_viewer").style.display = "none";
+            }
+        </script>
+        
         <div id="background"></div>
         <div id="menu">
             <a href="index.html">HOME</a>
             <a href="showcase.html">SHOWCASE</a>
-            <a href="resume.pdf">RESUME</a>
+            <a href="Ben_Chafik__Software_Engineer.pdf">RESUME</a>
+            <a href="https://www.linkedin.com/in/aymane-chafik-ben/" target="_blank">LINKEDIN</a>
+            <a href="https://github.com/benaymane/" target="_blank">GITHUB</a>
         </div>
 
+        <div id="picture_viewer">
+            <div onclick="closeViewer()" id="closing_bar">
+                <img src="style/closing_X.png" />
+            </div>
+            <div id="picture_bar">
+                <img id="picture_holder" src="style/DietBud_3.jpg"/>
+            </div>
+        </div>
         <div id="showcase_container">
             <div id="showcase">
                 <div id="project">
@@ -41,15 +63,15 @@
                     </div>
                 </div>
                 <div id="pictures">
-                    <div class="picture"><img src="style/auxilium_1.JPG"/></div>
-                    <div class="picture"><img src="style/auxilium_2.JPG"/></div>
-                    <div class="picture"><img src="style/auxilium_3.JPG"/></div>
-                    <div class="picture"><img src="style/auxilium_4.JPG"/></div>
+                    <div onclick="showImage('auxilium_1.JPG')" class="picture"><img src="style/auxilium_1.JPG"/></div>
+                    <div onclick="showImage('auxilium_2.JPG')" class="picture"><img src="style/auxilium_2.JPG"/></div>
+                    <div onclick="showImage('auxilium_3.JPG')" class="picture"><img src="style/auxilium_3.JPG"/></div>
+                    <div onclick="showImage('auxilium_4.JPG')" class="picture"><img src="style/auxilium_4.JPG"/></div>
                 </div>
             </div>
         </div>
 
-        <div id="showcase_container_">
+        <div id="showcase_container">
             <div id="showcase">
                 <div id="project">
                     <h1>DietBud App</h1>
@@ -75,9 +97,9 @@
                     </div>
                 </div>
                 <div id="pictures">
-                    <div class="picture"><img src="style/DietBud_1.jpg"/></div>
-                    <div class="picture"><img src="style/DietBud_2.jpg"/></div>
-                    <div class="picture"><img src="style/DietBud_3.jpg"/></div>
+                    <div onclick="showImage('DietBud_1.jpg')" class="picture"><img src="style/DietBud_1.jpg"/></div>
+                    <div onclick="showImage('DietBud_2.jpg')" class="picture"><img src="style/DietBud_2.jpg"/></div>
+                    <div onclick="showImage('DietBud_3.jpg')" class="picture"><img src="style/DietBud_3.jpg"/></div>
                 </div>
             </div>
         </div>
