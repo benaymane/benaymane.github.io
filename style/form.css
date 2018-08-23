@@ -50,6 +50,7 @@
 #form_container textarea {
     height: 150px;
     margin-bottom: 10px;
+    padding-top: 8px;
 }
 
 #right_align {
