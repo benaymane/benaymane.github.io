@@ -68,9 +68,10 @@ absolute top 0 etc with inline block display with width and height
 }
 /*
 pink: rgb(255, 109, 255);
+pink-light: rgba(226, 101, 122);
 */
 #title span {
-    color: rgba(226, 101, 122);
+    color: rgba(223, 55, 55, 1);    
     margin-left: 5px;
 }
 
@@ -90,7 +91,7 @@ pink: rgb(255, 109, 255);
 }
 
 .link {
-    color: rgba(226, 101, 122);
+    color: rgba(223, 55, 55, 1);   
 }
 
 .spaced {
@@ -108,11 +109,11 @@ pink: rgb(255, 109, 255);
     border: 2px solid white;
     font-size: 35px;
     padding: 5px 15px 5px 15px;
-    transition: color 0.8s, border 1.5s ease-out;
+    transition: background-color 1.5s, border 1.5s ease-out;
 }
 
 .button a:hover {
-    color: rgba(226, 101, 122);
-    border: 2px solid rgba(223, 55, 55, 0.8);
-    transition: color 0.8s, border 1.5s ease-out;
+    background-color: rgba(223, 55, 55, 1);     
+    border: 2px solid rgba(223, 55, 55, 1);   
+    transition: background-color 1.5s, border 1.5s ease-out;
 }
