@@ -157,3 +157,8 @@ body {
     border: solid 2px white;
     cursor: pointer;
 }
+
+.important_msg {
+    text-decoration: underline;
+    color: rgba(223, 55, 55, 0.8);
+}
